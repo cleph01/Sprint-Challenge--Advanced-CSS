@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+a. Adaptive and responsive designs are similar in that they accont for the different screen sizes among desktop, tablet, and phones.
+Media queries are used to set breakpoints. The differences lay in that fact that in adaptive designs, layouts are still hard coded at each media query with pixels instead of with responsive units (em/rem). More importantly though is the fact that responsive design eliminates the choppy feel experienced when the viewport expands or shrinks.  With responsive design "you get an experience that looks and functions beautifully across thousands of devices and screen sizes."
+
 2. Describe what it means to be mobile first vs desktop first.
+
+a. Mobile first is when you implement a web design to fit a mobile viewport first, using min-width instead of max-width to establish media queries.  Desktop first sets up the initial scale of the sit to fit a desktop, then uses media queries to scale down.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+a. It makes it easier to work with rem units by making 1rem = 10pixels.  
+
 4. How would you describe preprocessing to someone new to CSS?
 
+a. Preprocessing is a software equipped to help a developer to write more inuitive CSS, leveraging nesting, functions, variables, and much more in preprocessing file - which is then run through a compiler and spits out conventional CSS on the other end.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing are the pre-installed functions already available.  The concept that gives my the most trouble is the breadth of it all.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
