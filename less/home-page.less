@@ -1,9 +1,21 @@
 // Home Content
+html{
+  font-size:62.5%;
+}
 
 .home {
 
   .intro {
 
+    .image-container{
+      img{
+        @media (max-width:500px){
+          width:100%;
+          height:12.40rem;
+
+        }
+      }
+    }
     h2 {
       padding: 15px;
     }
@@ -19,11 +31,40 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media (max-width:500px){
+      flex-direction: column;
+      align-items: center;
+
+      }
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+    }
+
+    .blast{
+      @media (max-width:500px){
+        width: 90%;
+        height:auto;
+
+      }
+    }
+
+    .sky{
+      @media (max-width:500px){
+        display: none;
+
+      }
+    }
+
+    .launch{
+      @media (max-width:500px){
+        display: none;
+
+      }
     }
   }
 
@@ -46,8 +87,20 @@
     display: flex;
     justify-content: center;
 
+    @media (max-width:500px){
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top:0rem;
+      padding:0rem 2rem;
+
+    }
+
     .walk-text {
       width: 50%;
+
+      @media (max-width:500px){
+        width:100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +111,41 @@
       }
 
       .btn {
+        .btn-design(#22283A, #fff, none, 0.9rem, 2.25rem, 1.25rem, 0.5rem);
+        
+        &:hover {
+          // The compiled color returned is #006667 
+            background-color:@sea-shell;
+            color:@river-bend;
+          }
+
+          @media (max-width:500px){
+            width:100%;
+            padding:2.70rem 2.75rem;
+      
+          }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media (max-width:500px){
+        width:100%;
+        margin-left: 0rem;
+        margin:4rem 4rem 2rem;
+      }
       
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 10px;  
       }
     }
   }
+  footer{
+    margin-top:2.05rem;
+  }
 }// home
+
