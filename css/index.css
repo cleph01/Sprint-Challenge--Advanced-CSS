@@ -174,15 +174,31 @@ nav {
   margin: 1.3rem 0rem;
   height: 7.5rem;
 }
-nav .link-container {
+nav .nav-item {
+  width: 40.75rem;
+}
+nav .nav-item .link-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  font-size: 1.6rem;
 }
-nav .link-container .menu-links {
+nav .nav-item .link-container .menu-links {
   text-decoration: none;
+  color: #454A59;
+}
+.btn {
+  background-color: #22283A;
+  color: white;
+  border: none;
+  padding: 0.9rem 2.25rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 footer {
   color: #22283B;
