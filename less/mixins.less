@@ -1,1 +1,21 @@
 // Mixins Here
+.custom-layout(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.btn-design(@bg-color, @color, @border, @tb-padding, @lr-padding, 
+            @font-size, @border-radius){
+    background-color:@bg-color;
+    color: white;
+    border: if((@border ='none'),none,@border);
+    padding: @tb-padding @lr-padding;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:@border-radius;
+    cursor: pointer;
+}
